@@ -4,54 +4,69 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="js/app.js"></script>
-    <link rel="stylesheet" href="css/main.css">
     <title>Cars</title>
+    <script src="app.js"></script>
+    <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-    <h2>pimp my ride</h2>
+    <h2>Spin the wheels</h2>
     <form id="new-form">
         <div id="form">
-      
-            <label for="first_name">First Name:</label>
-            <input type="text" id="first_name">
-
-            <label for="last_name">Last Name:</label>
-            <input type="text" id="last_name">
-
-            <label for="car">Pick your ride</label>
-            <select id="car">
-                <option value=""disabled selected></option>
-                <option value="ferrari">Ferrari</option>
-                <option value="bmw">BMW</option>
-                <option value="aston">Aston Martin</option>
-                <option value="fiat">fiat 126p</option>
-            </select>
-
-            <label for="engine">load the power:</label>
-            <select id="engine">
-                <option value=""disable selected></option>
-                <option value="v6">childish V6</option>
-                <option value="v8">V8</option>
-                <option value="v10">sweetie V10</option>
-                <option value="650cc">for real men 650cc</option>
-            </select>
-
-            <label for="colour">choose a colour:</label>
-            <select id="colour">
-                <option value=""disable selected></option>
-                <option value="red">Red</option>
-                <option value="green">Green</option>
-                <option value="gray">Gray</option>
-            </select>
             
+            <div id="user_input">
+                <label for="first_name" class="primary">First Name:</label>
+                <input type="text" id="first_name" required>
+            </div>
+            
+            <div id="user_input">
+                <label for="last_name" class="primary">Last Name:</label>
+                <input type="text" id="last_name" required>
+            </div>
+            
+            <div id="user_input">
+                <label for="car" class="primary">Pick your ride</label>
+                <select id="car">
+                    <option value=""disabled selected></option>
+                    <option value="ferrari">Ferrari</option>
+                    <option value="bmw">BMW</option>
+                    <option value="aston">Aston Martin</option>
+                    <option value="fiat">fiat 126p</option>
+                </select>
+            </div>
+            
+            <div id="user_input">
+                <label for="engine">load the power:</label>
+                <select id="engine">
+                    <option value=""disable selected></option>
+                    <option value="v6">childish V6</option>
+                    <option value="v8">V8</option>
+                    <option value="v10">sweetie V10</option>
+                    <option value="650cc">for real men 650cc</option>
+                </select>
+            </div>
 
-
-        
+            <div id="user_input">
+                <label for="colour">choose a colour:</label>
+                <select id="colour">
+                    <option value=""disable selected></option>
+                    <option value="red">Red</option>
+                    <option value="green">Green</option>
+                    <option value="gray">Gray</option>
+                </select>
+            </div>
+            
         </div>
 
-    <button type="submit" id="submit_name">DRIVE OFF</button>
+    <button type="submit" id="submit_name" value="save">Drive off button</button>
     </form>
+    
+    <h2>This is what you choose:</h2>
+    <ul id="list"></ul>
+    
+    <button id="delete_all">Delete All</button>
+
+    
+    
     
 </body>
 </html>
